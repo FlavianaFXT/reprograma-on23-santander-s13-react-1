@@ -1,6 +1,4 @@
-import Cardstitle from "./CardsTitle";
-import Cardsimage from "./Cardsimage";
-import titania from "./titania.jpeg";
+import Card from "./Card";
 import familia from "../assets/familia.jpeg";
 import minhafilha from "../assets/ana.jpeg";
 import mydogs from "../assets/randi-e-pandora.jpeg";
@@ -8,53 +6,32 @@ import nature from "../assets/natureza.jpeg";
 import animals from "../assets/jumentinho.jpeg";
 import chocolate from "../assets/chocolate.jpg";
 import netflix from "../assets/netflix.jpg";
-import DescriptionCard from "./DescriptionCard";
+import books from "../assets/leitura.jpg";
+import music from "../assets/música.jpg";
+
 
 function Cards(props){
     return(
     <>
-        <div className="card">
-            <Cardstitle text="Familia"/>
-            <Cardsimage image={familia}/>
-            <DescriptionCard text="Tanto a de origem, como a que fui presenteada com o casamento, quanto a que formei com meu esposo."/>
-        </div>
+        <Card text="👪 Familia" image={familia} alt="Foto de Flaviana, com seus pais, avó materna, esposo e filha" caption="Flaviana, seus pais, avó materna, esposo e filha." description="Tanto a de origem, como a que fui presenteada com o casamento, quanto a que formei com meu esposo."/>
 
-        <div className="card">
-            <Cardstitle text="Minha filha"/>
-            <Cardsimage image={minhafilha}/>
-            <DescriptionCard text="Maior presente que Deus me deu!!! Não foi planejada, mas muito desejada!!!"/>
-        </div>
+        <Card text="💕 Filha" image={minhafilha} alt="Foto da filha de Flaviana segurando um preá" caption="Minha filha com seu amigo preá" description="Maior presente que Deus me deu!!! Não foi planejada, mas muito desejada!!!"/>
 
-        <div className="card">
-            <Cardstitle text="Minhas doguíneas"/>
-            <Cardsimage image={mydogs}/>
-            <DescriptionCard text="Randi e Pandora. Duas pastor bem trelosas, mas muito amorosas. Me estressam, mas me alegram rsrrrsrs"/>
-        </div>
+        <Card text="🐾 Minhas doguíneas" image={mydogs} alt="Foto das cachorras de Flaviana" caption="Randi e Pandora - minhas doguineas" description="Duas pastor bem trelosas, mas muito amorosas. Me estressam, mas me alegram rsrrrsrs"/>
 
-        <div className="card">
-            <Cardstitle text="Natureza"/>
-            <Cardsimage image={nature}/>
-            <DescriptionCard text="Onde mais relaxo minha cabeça."/>
-        </div>
+        <Card text="🌵 Natureza" image={nature} alt="Foto de uma paisagem do bioma Caatinga" caption="Paisagem do bioma caatinga" description="Onde mais relaxo minha cabeça, esqueço dos problemas e me conecto com o divino."/>
 
-        <div className="card">
-            <Cardstitle text="Animais"/>
-            <Cardsimage image={animals}/>
-            <DescriptionCard text="Amo todo tipo de bicho!"/>
-        </div>
+        <Card text="🐠 Animais" image={animals} alt="Foto de um jumento" caption="Jumentinho de estimação de minha sogra." description="Amo todo tipo de bicho!Simplesmente."/>
 
-        <div className="card">
-            <Cardstitle text="Chocolate"/>
-            <Cardsimage image={chocolate}/>
-            <DescriptionCard text="sem dúvidas a comida que mais amo e nao viveria sem. Tudo com chocolate é muito bom!"/>
-        </div>
+        <Card text="🍫 Chocolate" image={chocolate} alt="Foto de barras de chocolates" caption="Chocolates" description="Sem dúvidas a comida que mais amo e não viveria sem. Tudo com chocolate é muito bom! Quer me ver feliz??? Chocolate nela!"/>
 
-        <div className="card">
-            <Cardstitle text="Cama e Netflix"/>
-            <Cardsimage image={netflix}/>
-            <DescriptionCard text="sem comentários! Bom demais!"/>
-        </div>
-    </>
+        <Card text="🏩 Cama e Netflix" image={netflix} alt="Foto de um gato deitado na cama com um computador e netflix conectada" caption="Gatíneo fofíneo me representando" description="Sem comentários! Bom demais! Programa de todos os meus domingos no meu day off."/>
+
+        <Card text="📖 Livros" image={books} alt="Imagem de livros empilhados, estando o primeiro aberto." caption="Livros" description="A paixão pela leitura vem desde que me entendo por gente. Pra mim uma das coisas satisfatórias da vida é cheiro de livro novo, passar cada página e viajar nas histórias e conhecimentos."/>
+
+        <Card text="🎶 Música" image={music} alt="Desenho de uma pessoa com sifras musicais saindo de sua cabeça" caption="Melhor representação de música" description="Outra paixão é a música. Praticamente tudo o que faço é com ela pra me inspirar, animar, consolar, celebrar, trabalhar...E sou muito eclética. Ouço todo tipo de música. O que vai definir qual vou ouvir hoje é o meu mood do dia."/>
+
+    </> 
     )
 }
 
