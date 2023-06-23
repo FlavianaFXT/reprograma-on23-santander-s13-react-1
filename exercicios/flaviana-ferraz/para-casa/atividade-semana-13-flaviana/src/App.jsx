@@ -1,23 +1,21 @@
 import './App.css'
-import PrincipalTitle from './components/PrincipalTitle'
-import Presentation from './components/Presentation'
+import Header from './components/Header'
+import Bio from './components/Bio'
 import Cards from './components/Cards'
+import Footer from './components/Footer'
 
 function App() {
   
   return (
     <>
-      <PrincipalTitle/>
-      <Presentation/>
+      <Header/>
+      <Bio/>
       <div className="local-cards">
         <Cards/>
       </div>
-      <footer>
-        <p>Site desenvolvido no curso Reprograma - aulas de React (Semana 13) - Prof Lilit Bandeira - 
-        por Flaviana Ferraz</p>
-      </footer>
+      <Footer/>
     </>
   )
 }
 
-export default App
+export default App;

@@ -10,7 +10,7 @@ import books from "../assets/leitura.jpg";
 import music from "../assets/música.jpg";
 
 
-function Cards(props){
+function Cards(){
     return(
     <>
         <Card text="👪 Familia" image={familia} alt="Foto de Flaviana, com seus pais, avó materna, esposo e filha" caption="Flaviana, seus pais, avó materna, esposo e filha." description="Tanto a de origem, como a que fui presenteada com o casamento, quanto a que formei com meu esposo."/>
